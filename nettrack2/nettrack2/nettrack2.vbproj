@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD61DF3E-5697-4248-9A38-119BD39DD3BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>nettrack2.My.MyApplication</StartupObject>
+    <RootNamespace>nettrack2</RootNamespace>
+    <AssemblyName>nettrack2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>nettrack2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>nettrack2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cleanup.Designer.vb">
+      <DependentUpon>cleanup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cleanup.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="close.Designer.vb">
+      <DependentUpon>close.vb</DependentUpon>
+    </Compile>
+    <Compile Include="close.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="danger.Designer.vb">
+      <DependentUpon>danger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="danger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVirusDetected.Designer.vb">
+      <DependentUpon>frmVirusDetected.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVirusDetected.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fullcheck.Designer.vb">
+      <DependentUpon>fullcheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fullcheck.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="notification.Designer.vb">
+      <DependentUpon>notification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="notification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profile.Designer.vb">
+      <DependentUpon>profile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="profile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quickscan.Designer.vb">
+      <DependentUpon>quickscan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="quickscan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="quick_scan.Designer.vb">
+      <DependentUpon>quick_scan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="quick_scan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.vb">
+      <DependentUpon>register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Resource1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource2.resx</DependentUpon>
+    </Compile>
+    <Compile Include="speedup.Designer.vb">
+      <DependentUpon>speedup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="speedup.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.vb">
+      <DependentUpon>settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="settings.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="virusscan.Designer.vb">
+      <DependentUpon>virusscan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="virusscan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.vb">
+      <DependentUpon>welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="cleanup.resx">
+      <DependentUpon>cleanup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="close.resx">
+      <DependentUpon>close.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="danger.resx">
+      <DependentUpon>danger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fullcheck.resx">
+      <DependentUpon>fullcheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notification.resx">
+      <DependentUpon>notification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profile.resx">
+      <DependentUpon>profile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quickscan.resx">
+      <DependentUpon>quickscan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quick_scan.resx">
+      <DependentUpon>quick_scan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource2.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource2.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="speedup.resx">
+      <DependentUpon>speedup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="virusscan.resx">
+      <DependentUpon>virusscan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_bin_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inbox_settings_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_small_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\macos_minimize_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_window_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %2830%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %2832%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %2834%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_property_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speed_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touch_id_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virus_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question_mark_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\DARK_THEME.png" />
+    <None Include="Resources\RED1.png" />
+    <None Include="Resources\DEFAULT1.png" />
+    <None Include="Resources\DARK_THEME1.png" />
+    <Content Include="Resources\DEFAULT.png" />
+    <None Include="Resources\profile_32px.png" />
+    <Content Include="Resources\RED.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

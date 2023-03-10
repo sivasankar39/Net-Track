@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: nettrack2, Configuration: Debug Any CPU ------
+1>  nettrack2 -> C:\Users\Sivasankar\source\repos\nettrack2\nettrack2\bin\Debug\nettrack2.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
